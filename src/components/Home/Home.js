@@ -10,13 +10,13 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [font, setFont] = useState('comforter');
-  const [align, setAlign] = useState('center');
+  const [align, setAlign] = useState('');
   const [text, setText] = useState('');
 
   return (
     <main className='main' >
-      <Preview title={title} subtitle={subtitle} text={text} font={font} align={align}/>
-      <Editor setTitle={setTitle} title={title} setSubtitle={setSubtitle} subtitle={subtitle} setText={setText} setFont={setFont} font={font} setAlign={setAlign}/>
+      <Preview title={title} subtitle={subtitle} text={text} font={font} align={align} />
+      <Editor setTitle={setTitle} title={title} setSubtitle={setSubtitle} subtitle={subtitle} setText={setText} setFont={setFont} font={font} align={align} setAlign={setAlign}/>
     </main>
   );
 }
